@@ -10,9 +10,9 @@
   <a href="index.html">🏠 Home</a> |
   <a href="contact.html">📬 Contact</a>
 </nav>
+    <p><em id="lastUpdated"></em></p>
     <h1>Welcome to George's Windows Tricks!</h1>
     <p> This site will share simple and useful tricks for Windows and more. 😊</p>
-    <p><em>Last updated: July 2, 2025</em></p>
 
     <h2>Featured Tricks</h2>
     <ul>
@@ -21,6 +21,11 @@
         <li>🖥️ Enable dark mode: <code>Settings → Personalization → Colors</code></li>
     </ul>
     <p><a href="contact.html">📬 Contact Me</a></p>
+    <script>
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString(undefined, options);
+  document.getElementById("lastUpdated").textContent = `Last updated: ${today}`;
+</script>
 </body>
 <hr>
 </html>
