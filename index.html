@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8"
+    <link rel="stylesheet" href="style.css>
+    <title>Windows & Else Tricks</title>
+</head>
+<body>
+<nav>
+  <a href="index.html">🏠 Home</a> |
+  <a href="contact.html">📬 Contact Me</a>
+</nav>    
+    <h1>Welcome to George's Windows Tricks!</h1>
+    <p> This site will share simple and useful tricks for Windows and more. 😊</p>
+
+    <h2>Featured Tricks</h2>
+    <ul>
+        <li>How to clean temp files using <code>Run → %temp% → delete everything there</code></li>
+        <li>🔒 Quickly lock your screen with <code>Wndows key + L</code></li>
+        <li>🖥️ Enable dark mode: <code>Settings → Personalization → Colors</code></li>
+    </ul>
+    <hr>
+<p style="text-align: center;"><em id="lastUpdated"></em></p>
+    <script>
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString(undefined, options);
+  document.getElementById("lastUpdated").textContent = `Last updated: ${today}`;
+</script>
+</body>
+<hr>
+</html>
